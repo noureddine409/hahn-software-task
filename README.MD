@@ -47,6 +47,39 @@ Before running the application, make sure you have the following installed:
 - **PostgreSQL** (for the database): 
 - **Docker** (optional but recommended for easy database setup)
 
+```bash
+# 1. Install Node.js 20.x.x
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# 2. Install .NET SDK 8.x.x
+wget https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
+
+# 3. Install dotnet-ef for migrations
+dotnet tool install --global dotnet-ef
+
+# 4. Add the dotnet tools path for the current session
+export PATH="$PATH:/home/ubuntu/.dotnet/tools"
+
+# 5. Install PostgreSQL
+sudo apt-get update
+sudo apt-get install -y postgresql postgresql-contrib
+
+# 6. (Optional) Install Docker for easy PostgreSQL setup
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+# 7. (Optional) Set up PostgreSQL using Docker
+docker run --name postgres -e POSTGRES_PASSWORD=your_password -p 5432:5432 -d postgres
+
+```
 ---
 
 ## Backend Setup (ASP.NET Core)
@@ -82,7 +115,8 @@ To start the backend, run the following command:
 dotnet run
 ```
 
-The backend API will be available at `http://localhost:5000` (or see the console).
+The backend API will be available at `http://localhost:5007` (or see the console).
+or you can explore it by using this link `http://54.91.30.24:5007/swagger/index.html` where i deploy the .net app in ec2 instance, this link will redirect you to the swagger documentation.
 
 ---
 
