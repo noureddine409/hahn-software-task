@@ -1,0 +1,540 @@
+2024-10-15 18:07:55.777 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-15 18:07:55.893 +01:00 [DBG] Hosting starting
+2024-10-15 18:07:55.955 +01:00 [INF] Now listening on: http://localhost:5007
+2024-10-15 18:07:55.956 +01:00 [DBG] Loaded hosting startup assembly ticket-api
+2024-10-15 18:07:55.958 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-15 18:07:55.960 +01:00 [INF] Hosting environment: Development
+2024-10-15 18:07:55.962 +01:00 [INF] Content root path: C:\Users\hp\Desktop\.net\ticket-api
+2024-10-15 18:07:55.964 +01:00 [DBG] Hosting started
+2024-10-15 18:08:06.376 +01:00 [DBG] Connection id "0HN7D7FNUL01O" accepted.
+2024-10-15 18:08:06.430 +01:00 [DBG] Connection id "0HN7D7FNUL01O" started.
+2024-10-15 18:08:06.649 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - null null
+2024-10-15 18:08:06.678 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-15 18:08:06.719 +01:00 [DBG] The request path  does not match the path filter
+2024-10-15 18:08:06.725 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-10-15 18:08:06.764 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/tickets'
+2024-10-15 18:08:06.773 +01:00 [DBG] Endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)' with route pattern 'api/v1/tickets' is valid for the request path '/api/v1/tickets'
+2024-10-15 18:08:06.778 +01:00 [DBG] Request matched endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:08:06.784 +01:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-10-15 18:08:06.791 +01:00 [INF] CORS policy execution successful.
+2024-10-15 18:08:06.806 +01:00 [INF] Executing endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:08:06.860 +01:00 [INF] Route matched with {action = "GetTickets", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[API.DTOs.TicketDto]]] GetTickets(Int32, Int32, System.String, System.String) on controller API.Controllers.TicketController (ticket-api).
+2024-10-15 18:08:06.873 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-15 18:08:06.876 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-15 18:08:06.881 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-15 18:08:06.889 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-15 18:08:06.894 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-15 18:08:06.900 +01:00 [DBG] Executing controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:08:07.063 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-15 18:08:07.940 +01:00 [DBG] Entity Framework Core 8.0.10 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.8+55dd99eca42e9c6d6085961c60a0704373919a54' with options: None
+2024-10-15 18:08:07.944 +01:00 [DBG] Executed controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:08:07.958 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:08:07.963 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ...
+2024-10-15 18:08:07.965 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:08:07.967 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:08:07.971 +01:00 [DBG] Attempting to validate the bound parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:08:07.977 +01:00 [DBG] Done attempting to validate the bound parameter 'page' of type 'System.Int32'.
+2024-10-15 18:08:07.980 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:08:07.982 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' using the name 'size' in request data ...
+2024-10-15 18:08:07.984 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:08:07.988 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:08:07.992 +01:00 [DBG] Attempting to validate the bound parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:08:07.995 +01:00 [DBG] Done attempting to validate the bound parameter 'size' of type 'System.Int32'.
+2024-10-15 18:08:07.997 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:08:07.999 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' using the name 'sortDirection' in request data ...
+2024-10-15 18:08:08.002 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:08:08.007 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:08:08.009 +01:00 [DBG] Attempting to validate the bound parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:08:08.011 +01:00 [DBG] Done attempting to validate the bound parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:08:08.013 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:08:08.015 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' using the name 'keyword' in request data ...
+2024-10-15 18:08:08.018 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:08:08.024 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:08:08.027 +01:00 [DBG] Attempting to validate the bound parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:08:08.029 +01:00 [DBG] Done attempting to validate the bound parameter 'keyword' of type 'System.String'.
+2024-10-15 18:08:08.080 +01:00 [DBG] Compiling query expression: 
+'DbSet<Ticket>()
+    .OrderBy(t => t.CreatedAt)
+    .Skip(__p_0)
+    .Take(__p_1)'
+2024-10-15 18:08:08.312 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Ticket>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ticket.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ticket.CreatedAt (DateTime) Required, 1], [Property: Ticket.Description (string) Required MaxLength(40), 2], [Property: Ticket.Status (TicketStatus) Required, 3], [Property: Ticket.UpdatedAt (DateTime) Required, 4] }
+        SELECT t.Id, t.CreatedAt, t.Description, t.Status, t.UpdatedAt
+        FROM tickets AS t
+        ORDER BY t.CreatedAt ASC
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ticket>, 
+    API.Services.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-15 18:08:08.351 +01:00 [DBG] Creating DbConnection.
+2024-10-15 18:08:08.383 +01:00 [DBG] Created DbConnection. (29ms).
+2024-10-15 18:08:08.392 +01:00 [DBG] Opening connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:08.634 +01:00 [DBG] Opened connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:08.640 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-15 18:08:08.646 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2024-10-15 18:08:08.653 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (12ms).
+2024-10-15 18:08:08.663 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:08:08.733 +01:00 [INF] Executed DbCommand (70ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:08:08.775 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:08.799 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:08.801 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:08.808 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:08.812 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:08.817 +01:00 [DBG] Closing data reader to 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:08.829 +01:00 [DBG] A data reader for 'ticketDB' on server 'tcp://localhost:5432' is being disposed after spending 86ms reading results.
+2024-10-15 18:08:08.835 +01:00 [DBG] Closing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:08.844 +01:00 [DBG] Closed connection to database 'ticketDB' on server 'tcp://localhost:5432' (8ms).
+2024-10-15 18:08:08.850 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-15 18:08:08.860 +01:00 [DBG] No information found on request to perform content negotiation.
+2024-10-15 18:08:08.861 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-15 18:08:08.863 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-15 18:08:08.865 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-15 18:08:08.868 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[API.DTOs.TicketDto, ticket-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-15 18:08:08.914 +01:00 [DBG] Connection id "0HN7D7FNUL01P" accepted.
+2024-10-15 18:08:08.917 +01:00 [INF] Executed action API.Controllers.TicketController.GetTickets (ticket-api) in 2014.2884ms
+2024-10-15 18:08:08.918 +01:00 [DBG] Connection id "0HN7D7FNUL01P" started.
+2024-10-15 18:08:08.925 +01:00 [INF] Executed endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:08:08.927 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - null null
+2024-10-15 18:08:08.931 +01:00 [INF] HTTP GET /api/v1/tickets responded 200 in 2128.7283 ms
+2024-10-15 18:08:08.937 +01:00 [DBG] The request path  does not match the path filter
+2024-10-15 18:08:08.943 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/tickets'
+2024-10-15 18:08:08.944 +01:00 [DBG] Connection id "0HN7D7FNUL01O" completed keep alive response.
+2024-10-15 18:08:08.946 +01:00 [DBG] Endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)' with route pattern 'api/v1/tickets' is valid for the request path '/api/v1/tickets'
+2024-10-15 18:08:08.959 +01:00 [DBG] Request matched endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:08:08.962 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2024-10-15 18:08:08.963 +01:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-10-15 18:08:08.972 +01:00 [INF] CORS policy execution successful.
+2024-10-15 18:08:08.975 +01:00 [INF] Executing endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:08:08.977 +01:00 [INF] Route matched with {action = "GetTickets", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[API.DTOs.TicketDto]]] GetTickets(Int32, Int32, System.String, System.String) on controller API.Controllers.TicketController (ticket-api).
+2024-10-15 18:08:08.980 +01:00 [DBG] Disposing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:08.989 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-15 18:08:09.000 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-15 18:08:09.000 +01:00 [DBG] Disposed connection to database 'ticketDB' on server 'tcp://localhost:5432' (19ms).
+2024-10-15 18:08:09.006 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-15 18:08:09.020 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-15 18:08:09.013 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - 200 null application/json; charset=utf-8 2367.2458ms
+2024-10-15 18:08:09.025 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-15 18:08:09.041 +01:00 [DBG] Executing controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:08:09.191 +01:00 [DBG] Entity Framework Core 8.0.10 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.8+55dd99eca42e9c6d6085961c60a0704373919a54' with options: None
+2024-10-15 18:08:09.194 +01:00 [DBG] Executed controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:08:09.196 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:08:09.198 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ...
+2024-10-15 18:08:09.200 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:08:09.206 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:08:09.208 +01:00 [DBG] Attempting to validate the bound parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:08:09.210 +01:00 [DBG] Done attempting to validate the bound parameter 'page' of type 'System.Int32'.
+2024-10-15 18:08:09.212 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:08:09.214 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' using the name 'size' in request data ...
+2024-10-15 18:08:09.216 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:08:09.226 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:08:09.228 +01:00 [DBG] Attempting to validate the bound parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:08:09.230 +01:00 [DBG] Done attempting to validate the bound parameter 'size' of type 'System.Int32'.
+2024-10-15 18:08:09.232 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:08:09.239 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' using the name 'sortDirection' in request data ...
+2024-10-15 18:08:09.242 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:08:09.245 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:08:09.247 +01:00 [DBG] Attempting to validate the bound parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:08:09.251 +01:00 [DBG] Done attempting to validate the bound parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:08:09.257 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:08:09.260 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' using the name 'keyword' in request data ...
+2024-10-15 18:08:09.262 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:08:09.264 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:08:09.273 +01:00 [DBG] Attempting to validate the bound parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:08:09.275 +01:00 [DBG] Done attempting to validate the bound parameter 'keyword' of type 'System.String'.
+2024-10-15 18:08:09.279 +01:00 [DBG] Creating DbConnection.
+2024-10-15 18:08:09.281 +01:00 [DBG] Created DbConnection. (1ms).
+2024-10-15 18:08:09.284 +01:00 [DBG] Opening connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:09.290 +01:00 [DBG] Opened connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:09.292 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-15 18:08:09.294 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-10-15 18:08:09.299 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2024-10-15 18:08:09.301 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:08:09.312 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:08:09.324 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:09.327 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:09.331 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:09.333 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:09.338 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:08:09.341 +01:00 [DBG] Closing data reader to 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:09.343 +01:00 [DBG] A data reader for 'ticketDB' on server 'tcp://localhost:5432' is being disposed after spending 19ms reading results.
+2024-10-15 18:08:09.347 +01:00 [DBG] Closing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:09.351 +01:00 [DBG] Closed connection to database 'ticketDB' on server 'tcp://localhost:5432' (3ms).
+2024-10-15 18:08:09.356 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-15 18:08:09.362 +01:00 [DBG] No information found on request to perform content negotiation.
+2024-10-15 18:08:09.364 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-15 18:08:09.366 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-15 18:08:09.367 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-15 18:08:09.371 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[API.DTOs.TicketDto, ticket-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-15 18:08:09.375 +01:00 [INF] Executed action API.Controllers.TicketController.GetTickets (ticket-api) in 334.0349ms
+2024-10-15 18:08:09.379 +01:00 [INF] Executed endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:08:09.381 +01:00 [INF] HTTP GET /api/v1/tickets responded 200 in 405.8608 ms
+2024-10-15 18:08:09.384 +01:00 [DBG] Connection id "0HN7D7FNUL01P" completed keep alive response.
+2024-10-15 18:08:09.392 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2024-10-15 18:08:09.396 +01:00 [DBG] Disposing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:08:09.401 +01:00 [DBG] Disposed connection to database 'ticketDB' on server 'tcp://localhost:5432' (5ms).
+2024-10-15 18:08:09.412 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - 200 null application/json; charset=utf-8 484.1496ms
+2024-10-15 18:09:22.259 +01:00 [INF] Application is shutting down...
+2024-10-15 18:09:22.265 +01:00 [DBG] Hosting stopping
+2024-10-15 18:09:22.287 +01:00 [DBG] Connection id "0HN7D7FNUL01P" disconnecting.
+2024-10-15 18:09:22.287 +01:00 [DBG] Connection id "0HN7D7FNUL01O" disconnecting.
+2024-10-15 18:09:22.294 +01:00 [DBG] Connection id "0HN7D7FNUL01P" stopped.
+2024-10-15 18:09:22.296 +01:00 [DBG] Connection id "0HN7D7FNUL01O" stopped.
+2024-10-15 18:09:22.298 +01:00 [DBG] Connection id "0HN7D7FNUL01P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-15 18:09:22.299 +01:00 [DBG] Connection id "0HN7D7FNUL01O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-15 18:09:22.308 +01:00 [DBG] Hosting stopped
+2024-10-15 18:09:27.335 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-15 18:09:27.710 +01:00 [DBG] Hosting starting
+2024-10-15 18:09:27.780 +01:00 [INF] Now listening on: http://localhost:5007
+2024-10-15 18:09:27.787 +01:00 [DBG] Loaded hosting startup assembly ticket-api
+2024-10-15 18:09:27.791 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-15 18:09:27.794 +01:00 [INF] Hosting environment: Development
+2024-10-15 18:09:27.795 +01:00 [INF] Content root path: C:\Users\hp\Desktop\.net\ticket-api
+2024-10-15 18:09:27.797 +01:00 [DBG] Hosting started
+2024-10-15 18:09:35.783 +01:00 [DBG] Connection id "0HN7D7GIJABIU" accepted.
+2024-10-15 18:09:44.071 +01:00 [DBG] Connection id "0HN7D7GIJABIU" received FIN.
+2024-10-15 18:09:53.086 +01:00 [DBG] Connection id "0HN7D7GIJABIV" accepted.
+2024-10-15 18:09:53.086 +01:00 [DBG] Connection id "0HN7D7GIJABIU" started.
+2024-10-15 18:09:53.091 +01:00 [DBG] Connection id "0HN7D7GIJABIV" started.
+2024-10-15 18:09:53.106 +01:00 [DBG] Connection id "0HN7D7GIJABIU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-15 18:09:53.114 +01:00 [DBG] Connection id "0HN7D7GIJABIU" disconnecting.
+2024-10-15 18:09:53.132 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - null null
+2024-10-15 18:09:53.132 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=2&size=5&keyword=&sortDirection=asc - null null
+2024-10-15 18:09:53.142 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-15 18:09:53.147 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-15 18:09:53.166 +01:00 [DBG] The request path  does not match the path filter
+2024-10-15 18:09:53.166 +01:00 [DBG] The request path  does not match the path filter
+2024-10-15 18:09:53.170 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-10-15 18:09:53.192 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/tickets'
+2024-10-15 18:09:53.192 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/tickets'
+2024-10-15 18:09:53.199 +01:00 [DBG] Endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)' with route pattern 'api/v1/tickets' is valid for the request path '/api/v1/tickets'
+2024-10-15 18:09:53.199 +01:00 [DBG] Endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)' with route pattern 'api/v1/tickets' is valid for the request path '/api/v1/tickets'
+2024-10-15 18:09:53.202 +01:00 [DBG] Request matched endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:53.204 +01:00 [DBG] Request matched endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:53.211 +01:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-10-15 18:09:53.214 +01:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-10-15 18:09:53.216 +01:00 [INF] CORS policy execution successful.
+2024-10-15 18:09:53.217 +01:00 [INF] CORS policy execution successful.
+2024-10-15 18:09:53.222 +01:00 [INF] Executing endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:53.222 +01:00 [INF] Executing endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:53.253 +01:00 [INF] Route matched with {action = "GetTickets", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[API.DTOs.TicketDto]]] GetTickets(Int32, Int32, System.String, System.String) on controller API.Controllers.TicketController (ticket-api).
+2024-10-15 18:09:53.253 +01:00 [INF] Route matched with {action = "GetTickets", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[API.DTOs.TicketDto]]] GetTickets(Int32, Int32, System.String, System.String) on controller API.Controllers.TicketController (ticket-api).
+2024-10-15 18:09:53.261 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-15 18:09:53.265 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-15 18:09:53.267 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-15 18:09:53.269 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-15 18:09:53.277 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-15 18:09:53.279 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-15 18:09:53.283 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-15 18:09:53.286 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-15 18:09:53.290 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-15 18:09:53.296 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-15 18:09:53.300 +01:00 [DBG] Executing controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:09:53.301 +01:00 [DBG] Executing controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:09:53.397 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-15 18:09:53.397 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-15 18:09:53.952 +01:00 [DBG] Entity Framework Core 8.0.10 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.8+55dd99eca42e9c6d6085961c60a0704373919a54' with options: None
+2024-10-15 18:09:53.952 +01:00 [DBG] Entity Framework Core 8.0.10 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.8+55dd99eca42e9c6d6085961c60a0704373919a54' with options: None
+2024-10-15 18:09:53.960 +01:00 [DBG] Executed controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:09:53.965 +01:00 [DBG] Executed controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:09:53.976 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:09:53.976 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:09:53.982 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ...
+2024-10-15 18:09:53.982 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ...
+2024-10-15 18:09:53.985 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:53.987 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:53.989 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:53.993 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:53.998 +01:00 [DBG] Attempting to validate the bound parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:09:54.000 +01:00 [DBG] Attempting to validate the bound parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:09:54.004 +01:00 [DBG] Done attempting to validate the bound parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:54.004 +01:00 [DBG] Done attempting to validate the bound parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:54.009 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:09:54.013 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:09:54.015 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' using the name 'size' in request data ...
+2024-10-15 18:09:54.017 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' using the name 'size' in request data ...
+2024-10-15 18:09:54.019 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:54.021 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:54.023 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:54.031 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:54.033 +01:00 [DBG] Attempting to validate the bound parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:09:54.035 +01:00 [DBG] Attempting to validate the bound parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:09:54.037 +01:00 [DBG] Done attempting to validate the bound parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:54.038 +01:00 [DBG] Done attempting to validate the bound parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:54.041 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:09:54.047 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:09:54.049 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' using the name 'sortDirection' in request data ...
+2024-10-15 18:09:54.051 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' using the name 'sortDirection' in request data ...
+2024-10-15 18:09:54.053 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:54.056 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:54.063 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:54.065 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:54.067 +01:00 [DBG] Attempting to validate the bound parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:09:54.069 +01:00 [DBG] Attempting to validate the bound parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:09:54.071 +01:00 [DBG] Done attempting to validate the bound parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:54.072 +01:00 [DBG] Done attempting to validate the bound parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:54.079 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:09:54.081 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:09:54.083 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' using the name 'keyword' in request data ...
+2024-10-15 18:09:54.085 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' using the name 'keyword' in request data ...
+2024-10-15 18:09:54.087 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:54.095 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:54.097 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:54.099 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:54.101 +01:00 [DBG] Attempting to validate the bound parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:09:54.103 +01:00 [DBG] Attempting to validate the bound parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:09:54.105 +01:00 [DBG] Done attempting to validate the bound parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:54.111 +01:00 [DBG] Done attempting to validate the bound parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:54.115 +01:00 [INF] GetTickets: Page=2, Size=5, SortDirection=asc, Keyword=
+2024-10-15 18:09:54.115 +01:00 [INF] GetTickets: Page=1, Size=5, SortDirection=asc, Keyword=
+2024-10-15 18:09:54.119 +01:00 [INF] Fetching tickets: PageNumber=2, PageSize=5, SortDirection=asc, Keyword=
+2024-10-15 18:09:54.119 +01:00 [INF] Fetching tickets: PageNumber=1, PageSize=5, SortDirection=asc, Keyword=
+2024-10-15 18:09:54.169 +01:00 [DBG] Compiling query expression: 
+'DbSet<Ticket>()
+    .OrderBy(t => t.CreatedAt)
+    .Skip(__p_0)
+    .Take(__p_0)'
+2024-10-15 18:09:54.169 +01:00 [DBG] Compiling query expression: 
+'DbSet<Ticket>()
+    .OrderBy(t => t.CreatedAt)
+    .Skip(__p_0)
+    .Take(__p_1)'
+2024-10-15 18:09:54.418 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Ticket>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ticket.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ticket.CreatedAt (DateTime) Required, 1], [Property: Ticket.Description (string) Required MaxLength(40), 2], [Property: Ticket.Status (TicketStatus) Required, 3], [Property: Ticket.UpdatedAt (DateTime) Required, 4] }
+        SELECT t.Id, t.CreatedAt, t.Description, t.Status, t.UpdatedAt
+        FROM tickets AS t
+        ORDER BY t.CreatedAt ASC
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ticket>, 
+    API.Services.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-15 18:09:54.418 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Ticket>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ticket.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ticket.CreatedAt (DateTime) Required, 1], [Property: Ticket.Description (string) Required MaxLength(40), 2], [Property: Ticket.Status (TicketStatus) Required, 3], [Property: Ticket.UpdatedAt (DateTime) Required, 4] }
+        SELECT t.Id, t.CreatedAt, t.Description, t.Status, t.UpdatedAt
+        FROM tickets AS t
+        ORDER BY t.CreatedAt ASC
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ticket>, 
+    API.Services.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-15 18:09:54.463 +01:00 [DBG] Creating DbConnection.
+2024-10-15 18:09:54.463 +01:00 [DBG] Creating DbConnection.
+2024-10-15 18:09:54.495 +01:00 [DBG] Created DbConnection. (26ms).
+2024-10-15 18:09:54.495 +01:00 [DBG] Created DbConnection. (25ms).
+2024-10-15 18:09:54.501 +01:00 [DBG] Opening connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.501 +01:00 [DBG] Opening connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.706 +01:00 [DBG] Opened connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.706 +01:00 [DBG] Opened connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.713 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-15 18:09:54.713 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-15 18:09:54.721 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-10-15 18:09:54.721 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-10-15 18:09:54.732 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (18ms).
+2024-10-15 18:09:54.732 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (18ms).
+2024-10-15 18:09:54.744 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:09:54.744 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_0 OFFSET @__p_0
+2024-10-15 18:09:54.817 +01:00 [INF] Executed DbCommand (77ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:09:54.817 +01:00 [INF] Executed DbCommand (75ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_0 OFFSET @__p_0
+2024-10-15 18:09:54.868 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.868 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.905 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.905 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.911 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.913 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.916 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.918 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.920 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.923 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:54.933 +01:00 [DBG] Closing data reader to 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.935 +01:00 [DBG] Closing data reader to 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.949 +01:00 [DBG] A data reader for 'ticketDB' on server 'tcp://localhost:5432' is being disposed after spending 113ms reading results.
+2024-10-15 18:09:54.949 +01:00 [DBG] A data reader for 'ticketDB' on server 'tcp://localhost:5432' is being disposed after spending 121ms reading results.
+2024-10-15 18:09:54.959 +01:00 [DBG] Closing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.959 +01:00 [DBG] Closing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:54.969 +01:00 [DBG] Closed connection to database 'ticketDB' on server 'tcp://localhost:5432' (12ms).
+2024-10-15 18:09:54.969 +01:00 [DBG] Closed connection to database 'ticketDB' on server 'tcp://localhost:5432' (9ms).
+2024-10-15 18:09:54.979 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-15 18:09:54.979 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-15 18:09:54.986 +01:00 [DBG] No information found on request to perform content negotiation.
+2024-10-15 18:09:54.989 +01:00 [DBG] No information found on request to perform content negotiation.
+2024-10-15 18:09:54.992 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-15 18:09:54.996 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-15 18:09:54.999 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-15 18:09:55.000 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-15 18:09:55.003 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-15 18:09:55.004 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-15 18:09:55.008 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[API.DTOs.TicketDto, ticket-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-15 18:09:55.013 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[API.DTOs.TicketDto, ticket-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-15 18:09:55.064 +01:00 [DBG] Connection id "0HN7D7GIJABJ0" accepted.
+2024-10-15 18:09:55.067 +01:00 [DBG] Connection id "0HN7D7GIJABJ0" started.
+2024-10-15 18:09:55.068 +01:00 [INF] Executed action API.Controllers.TicketController.GetTickets (ticket-api) in 1767.0606ms
+2024-10-15 18:09:55.068 +01:00 [INF] Executed action API.Controllers.TicketController.GetTickets (ticket-api) in 1761.84ms
+2024-10-15 18:09:55.069 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - null null
+2024-10-15 18:09:55.072 +01:00 [INF] Executed endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:55.077 +01:00 [INF] Executed endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:55.083 +01:00 [DBG] The request path  does not match the path filter
+2024-10-15 18:09:55.086 +01:00 [INF] HTTP GET /api/v1/tickets responded 200 in 1863.8435 ms
+2024-10-15 18:09:55.086 +01:00 [INF] HTTP GET /api/v1/tickets responded 200 in 1862.3717 ms
+2024-10-15 18:09:55.087 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/tickets'
+2024-10-15 18:09:55.098 +01:00 [DBG] Connection id "0HN7D7GIJABIV" completed keep alive response.
+2024-10-15 18:09:55.100 +01:00 [DBG] Endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)' with route pattern 'api/v1/tickets' is valid for the request path '/api/v1/tickets'
+2024-10-15 18:09:55.101 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2024-10-15 18:09:55.103 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2024-10-15 18:09:55.111 +01:00 [DBG] Request matched endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:55.118 +01:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-10-15 18:09:55.118 +01:00 [DBG] Disposing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:55.118 +01:00 [DBG] Disposing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:55.119 +01:00 [INF] CORS policy execution successful.
+2024-10-15 18:09:55.130 +01:00 [DBG] Disposed connection to database 'ticketDB' on server 'tcp://localhost:5432' (11ms).
+2024-10-15 18:09:55.130 +01:00 [DBG] Disposed connection to database 'ticketDB' on server 'tcp://localhost:5432' (12ms).
+2024-10-15 18:09:55.132 +01:00 [INF] Executing endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:55.135 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - 200 null application/json; charset=utf-8 2004.3689ms
+2024-10-15 18:09:55.140 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=2&size=5&keyword=&sortDirection=asc - 499 null application/json; charset=utf-8 2009.2491ms
+2024-10-15 18:09:55.145 +01:00 [INF] Route matched with {action = "GetTickets", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[API.DTOs.TicketDto]]] GetTickets(Int32, Int32, System.String, System.String) on controller API.Controllers.TicketController (ticket-api).
+2024-10-15 18:09:55.164 +01:00 [DBG] Connection id "0HN7D7GIJABIU" stopped.
+2024-10-15 18:09:55.170 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-15 18:09:55.178 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-10-15 18:09:55.181 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-15 18:09:55.189 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-15 18:09:55.194 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-15 18:09:55.197 +01:00 [DBG] Executing controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:09:55.319 +01:00 [DBG] Entity Framework Core 8.0.10 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.8+55dd99eca42e9c6d6085961c60a0704373919a54' with options: None
+2024-10-15 18:09:55.323 +01:00 [DBG] Executed controller factory for controller API.Controllers.TicketController (ticket-api)
+2024-10-15 18:09:55.329 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:09:55.331 +01:00 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ...
+2024-10-15 18:09:55.334 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:55.336 +01:00 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:55.339 +01:00 [DBG] Attempting to validate the bound parameter 'page' of type 'System.Int32' ...
+2024-10-15 18:09:55.347 +01:00 [DBG] Done attempting to validate the bound parameter 'page' of type 'System.Int32'.
+2024-10-15 18:09:55.350 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:09:55.353 +01:00 [DBG] Attempting to bind parameter 'size' of type 'System.Int32' using the name 'size' in request data ...
+2024-10-15 18:09:55.356 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:55.363 +01:00 [DBG] Done attempting to bind parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:55.366 +01:00 [DBG] Attempting to validate the bound parameter 'size' of type 'System.Int32' ...
+2024-10-15 18:09:55.369 +01:00 [DBG] Done attempting to validate the bound parameter 'size' of type 'System.Int32'.
+2024-10-15 18:09:55.371 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:09:55.378 +01:00 [DBG] Attempting to bind parameter 'sortDirection' of type 'System.String' using the name 'sortDirection' in request data ...
+2024-10-15 18:09:55.381 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:55.383 +01:00 [DBG] Done attempting to bind parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:55.386 +01:00 [DBG] Attempting to validate the bound parameter 'sortDirection' of type 'System.String' ...
+2024-10-15 18:09:55.390 +01:00 [DBG] Done attempting to validate the bound parameter 'sortDirection' of type 'System.String'.
+2024-10-15 18:09:55.395 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:09:55.397 +01:00 [DBG] Attempting to bind parameter 'keyword' of type 'System.String' using the name 'keyword' in request data ...
+2024-10-15 18:09:55.400 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:55.401 +01:00 [DBG] Done attempting to bind parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:55.403 +01:00 [DBG] Attempting to validate the bound parameter 'keyword' of type 'System.String' ...
+2024-10-15 18:09:55.407 +01:00 [DBG] Done attempting to validate the bound parameter 'keyword' of type 'System.String'.
+2024-10-15 18:09:55.412 +01:00 [INF] GetTickets: Page=1, Size=5, SortDirection=asc, Keyword=
+2024-10-15 18:09:55.413 +01:00 [INF] Fetching tickets: PageNumber=1, PageSize=5, SortDirection=asc, Keyword=
+2024-10-15 18:09:55.419 +01:00 [DBG] Creating DbConnection.
+2024-10-15 18:09:55.421 +01:00 [DBG] Created DbConnection. (1ms).
+2024-10-15 18:09:55.423 +01:00 [DBG] Opening connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:55.428 +01:00 [DBG] Opened connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:55.430 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-15 18:09:55.431 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-10-15 18:09:55.433 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-10-15 18:09:55.439 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:09:55.450 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Description", t."Status", t."UpdatedAt"
+FROM tickets AS t
+ORDER BY t."CreatedAt"
+LIMIT @__p_1 OFFSET @__p_0
+2024-10-15 18:09:55.459 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:55.462 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:55.464 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:55.466 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:55.471 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Ticket' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-15 18:09:55.476 +01:00 [DBG] Closing data reader to 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:55.478 +01:00 [DBG] A data reader for 'ticketDB' on server 'tcp://localhost:5432' is being disposed after spending 20ms reading results.
+2024-10-15 18:09:55.481 +01:00 [DBG] Closing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:55.484 +01:00 [DBG] Closed connection to database 'ticketDB' on server 'tcp://localhost:5432' (3ms).
+2024-10-15 18:09:55.487 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-10-15 18:09:55.493 +01:00 [DBG] No information found on request to perform content negotiation.
+2024-10-15 18:09:55.494 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-15 18:09:55.497 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-15 18:09:55.500 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-15 18:09:55.504 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[API.DTOs.TicketDto, ticket-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-15 18:09:55.507 +01:00 [INF] Executed action API.Controllers.TicketController.GetTickets (ticket-api) in 309.6385ms
+2024-10-15 18:09:55.512 +01:00 [INF] Executed endpoint 'API.Controllers.TicketController.GetTickets (ticket-api)'
+2024-10-15 18:09:55.513 +01:00 [INF] HTTP GET /api/v1/tickets responded 200 in 381.3856 ms
+2024-10-15 18:09:55.517 +01:00 [DBG] Connection id "0HN7D7GIJABJ0" completed keep alive response.
+2024-10-15 18:09:55.520 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2024-10-15 18:09:55.522 +01:00 [DBG] Disposing connection to database 'ticketDB' on server 'tcp://localhost:5432'.
+2024-10-15 18:09:55.526 +01:00 [DBG] Disposed connection to database 'ticketDB' on server 'tcp://localhost:5432' (4ms).
+2024-10-15 18:09:55.529 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/api/v1/tickets?page=1&size=5&keyword=&sortDirection=asc - 200 null application/json; charset=utf-8 459.7742ms
+2024-10-15 18:12:06.116 +01:00 [DBG] Connection id "0HN7D7GIJABIV" disconnecting.
+2024-10-15 18:12:06.117 +01:00 [DBG] Connection id "0HN7D7GIJABJ0" disconnecting.
+2024-10-15 18:12:06.125 +01:00 [DBG] Connection id "0HN7D7GIJABIV" stopped.
+2024-10-15 18:12:06.126 +01:00 [DBG] Connection id "0HN7D7GIJABJ0" stopped.
+2024-10-15 18:12:06.133 +01:00 [DBG] Connection id "0HN7D7GIJABIV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-15 18:12:06.135 +01:00 [DBG] Connection id "0HN7D7GIJABJ0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-15 18:21:23.935 +01:00 [INF] Application is shutting down...
+2024-10-15 18:21:23.941 +01:00 [DBG] Hosting stopping
+2024-10-15 18:21:23.978 +01:00 [DBG] Hosting stopped
+2024-10-15 18:21:29.941 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-15 18:21:30.077 +01:00 [DBG] Hosting starting
+2024-10-15 18:21:30.172 +01:00 [INF] Now listening on: http://localhost:5007
+2024-10-15 18:21:30.174 +01:00 [DBG] Loaded hosting startup assembly ticket-api
+2024-10-15 18:21:30.176 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-15 18:21:30.178 +01:00 [INF] Hosting environment: Development
+2024-10-15 18:21:30.179 +01:00 [INF] Content root path: C:\Users\hp\Desktop\.net\ticket-api
+2024-10-15 18:21:30.180 +01:00 [DBG] Hosting started
