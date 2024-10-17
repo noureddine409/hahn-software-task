@@ -116,7 +116,7 @@ dotnet run
 ```
 
 The backend API will be available at `http://localhost:5007` (or see the console).
-or you can explore it by using this link http://54.91.30.24:5007/swagger/index.html where i deploy the .net app in ec2 instance, this link will redirect you to the swagger documentation.
+or you can explore it by using this link http://localhost:5007/swagger/index.html . this link will redirect you to the swagger documentation.
 
 ---
 
