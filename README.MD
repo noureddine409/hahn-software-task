@@ -134,7 +134,7 @@ npm install
 Ensure that the frontend is configured to point to the backend API. Open the `.env` file (create one if necessary) in the `tickets-frontend` directory and set the API URL:
 
 ```env
-REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=http://localhost:5007/api
 ```
 
 ### 3. Running the Frontend
